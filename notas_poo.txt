@@ -1,0 +1,38 @@
+Classes
+Classe de modelo(model): classes que representam estrutura de domínio de aplicação, exemplo: Cliente, Pedido, Nota Fiscal e etc.
+Classe de serviço(service): classes que contém regras e validação de nosso sistema.
+Classe de repositório(repository): classes que contém uma integração com banco de dados.
+Classe de controle(controller): classes que possuem a finalidade de disponibilizar alguma comunicação externa, à nossa aplicação, como http web ou webservices.
+Classe utilitária(util): classe que contém recursos comuns, à toda nossa aplicação.
+
+Exercite a distribuição de classes por papéis dentro da sua aplicação para que se possa determinar a estrutura mais conveniente em cada arquivo do seu projeto.
+
+Sistema de agendamento de passeios
+
+Pacotes
+Convenção de pacotes
+Powersoft - seria o nome de uma empresa
+Comercial: com.powersoft
+Governamental: gov.powersoft
+Código aberto: org.powersoft
+criar estrutura de subpacotes ou pacotes mediante a finalidade - model, repository, service, controller, view, util.
+
+Não pode ter duas classes de mesmo nome no mesmo pacote.
+
+Visibilidade dos recursos
+Modificadores
+Modificador public
+Modificador protected
+Modificador private
+Modificador default
+
+Seguindo a convenção Java Beans, uma classe que contém esta estrutura de estados deverá seguir as regras abaixo:
+ * os atributos precisam ser private
+ * Como os atributos estarão em nível de classe, precisaremos dos métodos getX e setX
+ * O método get, para obter o valor atual do atributo, logo ele precisa ser public, retornar um tipo correspondente ao valor.
+ * O método set, para definir ou modificar o valor de um atributo em um objeto, logo, ele precisa ser public, receber um parâmetro do mesmo tipo de variável, mas não retorna nenhum valor void.
+
+Contrutores
+
+Enums
+São imutáveis e disponíveis por toda aplicação
